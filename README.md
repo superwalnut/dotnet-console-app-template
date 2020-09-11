@@ -1,4 +1,4 @@
-# Project Template - .Net Core 3.1 API + Autofac + Serilog + AutoMapper
+# Project Template - .Net Core 3.1 Console app + Autofac + Serilog + AutoMapper
 
 > This is a project template for .Net Core 3.1 Console app,
     pre-configured Autofac, Serilog, AutoMapper, Newtonsoft.Json
