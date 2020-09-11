@@ -58,7 +58,7 @@ This creates a project in folder `NetCoreDemo`
 
 ### Pre-configured Autofac 
 
-ContainerBuilder() that you can populate IServiceCollection and register your autofac modules in Startup.cs. Taking ApiModule from the template as an example, you can also create modules for your Service Layer, Repository Layer, etc.
+ContainerBuilder() that you can populate IServiceCollection and register your autofac modules in Startup.cs. Taking ConsoleModule from the template as an example, you can also create modules for your Service Layer, Repository Layer, etc.
 
 ```c#
         public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -71,7 +71,7 @@ ContainerBuilder() that you can populate IServiceCollection and register your au
         }
 ```
 
-Serilog & Automapper are registered in the ApiModule,
+Serilog & Automapper are registered in the ConsoleModule,
 
 ```c#
     public class ConsoleModule : Module
@@ -128,7 +128,7 @@ With created example profile,
     }
 ```
 
-And register the profile in ApiModule for AutoMapper,
+And register the profile in ConsoleModule for AutoMapper,
 
 ```c#
     public class ConsoleModule : Module
