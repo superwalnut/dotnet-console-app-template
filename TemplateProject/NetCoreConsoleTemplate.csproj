@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+
+    <PackageType>Template</PackageType>
+    <PackageId>Superwalnut.NetCoreConsoleTemplate</PackageId>
+    <Title>Core3.1 Console Autofac+Serilog Template</Title>
+    <Authors>Superwalnut</Authors>
+    <PackageIcon>icon-48.png</PackageIcon>
+    <Description>
+    This is a project template for .Net Core 3.1 Console app,
+    pre-configured and ready to use with, 
+    1. Autofac 5.2.0 registrations setup.    
+    2. pre-Configured Serilog 2.9.0 console sinks.
+    3. pre-Configured AutoMapper 10.0.0.
+    4. pre-Installed Newtonsoft.Json 12.0.3    
+    using `dotnet new -i Superwalnut.NetCoreConsoleTemplate` to install project as a template,
+    And using `dotnet new core-console-autofac` to create a project with the template.
+
+    </Description>
+    <PackageTags>.net core;autofac;serilog;automapper;</PackageTags>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
+    <PackageLicenseFile>template/LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/superwalnut/dotnet-console-app-template</PackageProjectUrl>
+  </PropertyGroup>  
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="AutofacSerilogIntegration" Version="4.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Contrib.Autofac.DependencyInjection" Version="4.0.0" />
+    <PackageReference Include="ManyConsole" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.7" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon-48.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="template\**\*" Exclude="template\**\bin\**;template\**\obj\**" />
+  </ItemGroup>
+</Project>

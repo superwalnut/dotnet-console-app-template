@@ -1,0 +1,13 @@
+{
+  "author": "superwalnut",
+  "name": ".Net Core Console Autofac+Serilog",
+
+  "identity": "Superwalnut.NetCoreConsoleTemplate",
+  "shortName": "core-console-autofac",
+  "classifications": ["Console"],
+  "tags": {
+    "language": "C#"
+  },
+
+  "sourceName": "DotnetConsoleDemo"
+}
